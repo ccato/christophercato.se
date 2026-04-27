@@ -51,6 +51,36 @@ body {
     padding: 0 1.5rem;
 }
 
+/* Navbar */
+nav {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--bg-primary);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--accent);
+}
+
 /* Hero Section */
 .hero {
     padding: 6rem 0;
@@ -159,6 +189,68 @@ body {
     font-size: 0.9rem;
     color: var(--text-secondary);
     line-height: 1.5;
+}
+
+/* Links List */
+.links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.link-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.link-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-color: var(--accent);
+}
+
+.link-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.link-url {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Hire Content */
+.hire-content p {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+.contact-highlight {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-top: 1.5rem;
+}
+
+.contact-highlight a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-highlight a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
 }
 
 /* Footer */
