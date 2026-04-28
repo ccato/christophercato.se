@@ -4,3 +4,9 @@
 !.dev.vars.example
 .env*
 !.env.example
+.DS_Store
+about_me_sv.md
+about_me.md
+tasks.md
+dist/.DS_Store
+dist/sv/.DS_Store
